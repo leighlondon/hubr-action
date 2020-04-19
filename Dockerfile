@@ -8,4 +8,4 @@ FROM alpine:3.11 AS action
 RUN apk add --no-cache bash ca-certificates
 COPY --from=base /bin/hubr /bin/hubr
 COPY entrypoint.sh /entrypoint.sh
-CMD [ "/entrypoint.sh" ]
+ENTRYPOINT [ "/entrypoint.sh" ]
