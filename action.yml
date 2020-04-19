@@ -5,8 +5,13 @@ inputs:
   name:
     description: 'the name of the project'
     required: true
+  token:
+    description: 'the github api token'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  env:
+    GITHUB_API_TOKEN: ${{ inputs.token }}
   args:
     - ${{ inputs.name }}
