@@ -2,9 +2,6 @@
 name: 'hubr'
 description: 'hubr release'
 inputs:
-  name:
-    description: 'the name of the project'
-    required: true
   from:
     description: 'the VERSION file to read from'
     default: 'VERSION'
