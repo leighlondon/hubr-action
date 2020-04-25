@@ -5,6 +5,9 @@ inputs:
   name:
     description: 'the name of the project'
     required: true
+  from:
+    description: 'the VERSION file to read from'
+    default: 'VERSION'
   token:
     description: 'the github api token'
     required: true
@@ -16,5 +19,5 @@ runs:
   args:
     - ${{ inputs.name }}
 outputs:
-  tags:
-    description: 'the tags that were found'
+  version:
+    description: 'the version that was released'
