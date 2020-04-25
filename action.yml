@@ -15,3 +15,6 @@ runs:
     GITHUB_API_TOKEN: ${{ inputs.token }}
   args:
     - ${{ inputs.name }}
+outputs:
+  tags:
+    description: 'the tags that were found'
