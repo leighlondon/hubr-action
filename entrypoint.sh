@@ -5,4 +5,5 @@ export HUBR_DEFAULT_ORG=""
 
 tags=$(hubr tags "$1")
 echo "::set-output name=tags::$tags"
-echo "warning:: an warning"
+echo "$tags"
+echo "::warning a warning"
