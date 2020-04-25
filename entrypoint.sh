@@ -4,6 +4,6 @@ hash hubr 2>/dev/null || die "missing hubr"
 export HUBR_DEFAULT_ORG=""
 
 tags=$(hubr tags "$1")
-echo "::set-output name=tags::$tags"
+echo "::set-output name=tags:: $tags"
 echo "$tags"
-echo "::warning a warning"
+echo "::warning:: a warning"
