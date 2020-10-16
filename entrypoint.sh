@@ -13,7 +13,7 @@ opts="-d"
 hubr now && opts=""
 
 version=$(head -n1 "$file") || die "unable to read version file"
-hubr push "$opts" "$name"   || die "unable to push release"
+hubr push "$opts" "$repo"   || die "unable to push release"
 
 echo "::set-output name=version:: $version"
 echo "released $repo@$version"
